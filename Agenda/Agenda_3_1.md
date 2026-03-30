@@ -31,9 +31,33 @@ Costs: I have a list of items we require but struggle with the translation of Ta
 
 #### Current Situation
 I have accessed the server in the evening of the 30.3. when nobody was doing anything. 
-Despite having nothing to do the Memory was already in the upper usage area:
-```  Mem[|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||5.57G/7.10G]
+Despite having nothing to do the Memory was already in the upper threshold area:
+```                 total        used        free      shared  buff/cache   available
+Mem:           7.1Gi       5.9Gi       370Mi        17Mi       1.2Gi       1.2Gi
+Swap:             0B          0B          0B
 ```
+Nothing in the Swap is usually a good sign
 
+For some reason while I was on the server there was no running instance of MySQL (any more).
+Therefor I can't do a proper examination of the current status.
+
+But some selected information:
+
+
+##### CPU
+```
+Model name:             Intel(R) Xeon(R) Platinum
+cpu MHz		: 2499.998
+cpu MHz		: 2499.998
+cpu MHz		: 2499.998
+cpu MHz		: 2499.998
+```
+Currently there's four cores with 2,5GHz each. Which is maybe a bit weak by today's standards...
+
+##### Hard Drive
+```
+/dev/vda3        99G   54G   41G  57% /
+```
+For now we don't need to worry about space. But 100GB is not much at all.
 
 ### Prototype
